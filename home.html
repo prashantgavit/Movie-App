@@ -1,0 +1,32 @@
+<html>
+<div style="width100%">
+   <h1>Movies released in this week</h1>
+   <table class=k>
+
+            <tr class=k id=tab3>
+               <th class=k id=tab3>Sr. No</th>
+               <th class=k id=tab3>Movie Name</th>
+               <th class=k id=tab3>Genre</th>
+               <th class=k id=tab3>Country</th>
+               <th class=k id=tab3>release date</th>
+               <th class=k id=tab3>region</th>
+               <th class=k id=tab3>poster</th>
+               <th class=k id=tab3>Description</th>
+
+            </tr>
+
+            <tr class=k id=tab3 ng-repeat = "movie in released_movie">
+               <td class=k id=tab3>{{$index+1}}</td>
+               <td class=k id=tab3 ng-click="movie_details(this)">{{ movie.Title }}</td>
+               <td class=k id=tab3>{{ movie.Genre }}</td>
+               <td class=k id=tab3>{{ movie.Country }}</td>
+               <td class=k id=tab3>{{ movie.ReleaseDate}}</td>
+               <td class=k id=tab3>{{ movie.Region}}</td>
+               <!--td class=k id=tab3><img src="{{movie.PosterPath}}" style="width:200px;height:228px;"></td-->
+               <td class=k id=tab3>{{movie.Description}}</td>
+
+            </tr>
+   </table>
+
+</div>
+</html>

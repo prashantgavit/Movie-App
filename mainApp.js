@@ -1,1 +1,1 @@
-var mainApp1 = angular.module("app1", ['ngRoute']);
+var mainApp1 = angular.module("mainApp1", ['ui.router']);
